@@ -21,6 +21,9 @@ public class NumberFrequencyInArray {
         frequencyOfInteger(arr, arr.length, Q, Q.length);
     }
 
+    /*
+     * TC = O(q*2logn) = O(q*logn)
+     */
     private static int frequencyOfInteger(int[] arr, int length, int[] Q, int q) {
         for (int i = 0; i < q; i++) {
             int firstOccurence = NumSearchByOccurence.binarySearchFirstOccurence(arr, length, Q[i]);
